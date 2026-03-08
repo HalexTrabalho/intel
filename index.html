@@ -47,8 +47,28 @@
         <div class="max-w-6xl mx-auto text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">Evolução dos Processadores Intel</h1>
             <p class="text-xl md:text-2xl text-blue-100 font-light max-w-3xl mx-auto">
-                De 1993 até a era da Inteligência Artificial: Uma jornada técnica através da engenharia que moldou a computação moderna.
+                De 1993 até a era da Inteligência Artificial: Uma jornada técnica através da engenharia que moldou a computação moderna.<br>
+				Se o processador é o operário e o IPC é a eficiência de cada movimento dele, as Threads são como os "braços" ou as "linhas de trabalho" que esse operário possui.<p><br><br>
+				<div class="max-w-6xl mx-auto text-justify">
+					O que são Threads?<br>
+					Em termos simples, uma Thread (fio, em inglês) é o menor conjunto de instruções que um software envia para o processador.<br>
+					Antigamente, um núcleo de processador conseguia lidar com apenas uma thread por vez. Hoje, graças a tecnologias como o Hyper-Threading (Intel) ou SMT (AMD), um único núcleo físico pode gerenciar duas threads simultaneamente.<br>
+					A diferença entre Núcleos (Cores) e Threads:<br>
+					Núcleos Físicos: São os cozinheiros na cozinha. Se você tem 4 núcleos, tem 4 pessoas cozinhando.<br>
+					Threads: São as mãos de cada cozinheiro.<br>
+					<li>Um cozinheiro com 1 Thread só consegue mexer uma panela por vez. Se ele precisar esperar a água ferver, ele fica parado.</li>
+					<li>Um cozinheiro com 2 Threads (Hyper-Threading) usa as duas mãos. Enquanto a mão esquerda espera a água ferver, a mão direita já está picando os legumes.</li><br>
+					Por que as Threads são importantes?<br>
+					O processador é tão rápido que, muitas vezes, ele termina uma tarefa e fica "esperando" o próximo comando chegar da memória RAM. As threads extras servem para preencher esses pequenos espaços vazios de tempo.<br>
+					1. <strong>Multitarefa</strong>: Permitem que o PC rode o Windows, o navegador com 20 abas, o Spotify e um jogo ao mesmo tempo sem travar.<br>
+					2. <strong>Eficiência</strong>: Em vez de deixar o núcleo ocioso, o processador "alimenta" o núcleo com uma segunda linha de tarefas.<br>
+					Núcleo (Core): A unidade real de processamento (o hardware). Um motor de carro.<br>
+					Thread:	O fluxo de trabalho que passa pelo núcleo.	As faixas de uma rodovia.<br> <br>
+					<strong>Obs: Ter mais threads não significa que o processador ficou "duas vezes mais rápido" (como se tivesse o dobro de núcleos). Significa que ele é mais eficiente em aproveitar o tempo, ganhando geralmente de 15% a 30% de performance em tarefas pesadas.</strong> <br> <br>
+					Exemplo prático:<br>
+					Abra o Gerenciador de Tarefas no Windows (Ctrl + Shift + Esc), na aba Desempenho, clica em CPU. Aí dá para ver Núcleos: (Ex: 6) e Processadores Lógicos (Threads): (Ex: 12).
             </p>
+			</div>
         </div>
     </header>
 
@@ -67,7 +87,7 @@
                     <h2 class="text-2xl font-bold">Pentium (1993)</h2>
                 </div>
                 <p class="text-slate-600 leading-relaxed mb-4">
-                    O primeiro processador verdadeiramente moderno. Introduziu o design superescalar, permitindo lidar com múltiplas instruções simultaneamente. Foi o herói de jogos clássicos como Doom.
+                    O primeiro processador verdadeiramente moderno. Introduziu o design superescalar, permitindo lidar com múltiplas instruções simultaneamente. Foi o herói de jogos clássicos como Doom.					
                 </p>
                 <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">MARCO: SUPERESCALAR</span>
             </section>
@@ -134,7 +154,7 @@
 					<li><strong>Pipelining</strong>: Dividir uma instrução em etapas menores para que várias instruções possam ser processadas simultaneamente (como uma linha de montagem).</li>
 					<li><strong>Previsão de Desvio (Branch Prediction)</strong>: O processador tenta "adivinhar" qual será o próximo passo do software para já deixar o caminho pronto.</li>
 					<li><strong>Execução Fora de Ordem</strong>: O processador reorganiza as tarefas para não ficar parado esperando um dado lento, adiantando o que já pode ser feito.</li><br>
-					<font color="red">Obs: Comparar processadores apenas pelos "GHz" é como comparar carros apenas pelas "RPM" (rotações do motor) sem olhar para a potência ou a marcha engatada</font>.<br>
+					<font color="red">Obs: Comparar processadores apenas pelos "GHz" é como comparar carros apenas pelas "RPM" (rotações do motor) sem olhar para a potência ou a marcha engatada.</font><br>
 					Cálculo de Desempenho Bruto:<br>
 					1. Calcule o total de instruções que cada processador consegue executar em 1 segundo.<br>
 					(Dica: Multiplique o Clock pelo IPC).<br>
