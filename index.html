@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel Evolution - Guia Técnico Completo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .intel-gradient {
+            background: linear-gradient(135deg, #0071C5 0%, #004a86 100%);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .quiz-option:hover {
+            border-color: #0071C5;
+            background-color: #eff6ff;
+        }
+
+        .correct-answer {
+            background-color: #dcfce7 !important;
+            border-color: #22c55e !important;
+        }
+
+        .wrong-answer {
+            background-color: #fee2e2 !important;
+            border-color: #ef4444 !important;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header / Hero -->
+    <header class="intel-gradient text-white py-16 px-4 shadow-xl">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">Evolução dos Processadores Intel</h1>
+            <p class="text-xl md:text-2xl text-blue-100 font-light max-w-3xl mx-auto">
+                De 1993 até a era da Inteligência Artificial: Uma jornada técnica através da engenharia que moldou a computação moderna.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- Timeline Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Pentium -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-blue-700">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Pentium (1993)</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    O primeiro processador verdadeiramente moderno. Introduziu o design superescalar, permitindo lidar com múltiplas instruções simultaneamente. Foi o herói de jogos clássicos como Doom.
+                </p>
+                <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">MARCO: SUPERESCALAR</span>
+            </section>
+
+            <!-- Celeron -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-indigo-100 p-3 rounded-lg text-indigo-700">
+                        <i class="fas fa-wallet text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Celeron (1998)</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    A resposta da Intel para o mercado de baixo custo. Baseado na arquitetura do Pentium II, mas com cache (é uma memória ultrarrápida [e de pequena capacidade] integrada diretamente ao chip da CPU. Sua função principal é servir como um "atalho" para os dados que o processador utiliza com mais frequência) L2 reduzido. Tornou-se o padrão em escolas e escritórios.
+                </p>
+                <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">FOCO: CUSTO-BENEFÍCIO</span>
+            </section>
+
+            <!-- Xeon -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-slate-800 p-3 rounded-lg text-white">
+                        <i class="fas fa-server text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Xeon (1998)</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Projetado para servidores e estações de trabalho. Introduziu suporte a memória ECC (correção de erro) e sistemas multiprocessados, sendo o motor da internet primitiva.
+                </p>
+                <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">NÍVEL: ENTERPRISE</span>
+            </section>
+
+            <!-- Core 2 Duo -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-cyan-100 p-3 rounded-lg text-cyan-700">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Core 2 Duo (2006)</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    O grande retorno da Intel. Focou em eficiência energética e performance por clock (ou IPC - Instruções Por Ciclo é a "eficiência do operário" dentro dessa oficina), encerrando a era de processadores barulhentos e superaquecidos.
+                </p>
+                <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">REVOLUÇÃO: EFICIÊNCIA</span>
+            </section>
+
+			<!-- Perfomance por clock -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-cyan-100 p-3 rounded-lg text-cyan-700">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Perfomance por clock</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    A performance por clock refere-se a quantas tarefas (instruções) um processador consegue completar em um único "pulso" do seu relógio interno (o clock). Muitas pessoas cometem o erro de achar que um processador de 4.0 GHz é sempre mais rápido que um de 3.0 GHz. Isso não é verdade, pois a performance real é o resultado de uma conta simples:<br>
+					Performance = Velocidade de Clock (GHz) x IPC (Instruções por Ciclo)<br>
+					Imagine duas pessoas pedalando bicicletas diferentes para percorrer 1 km:<br>
+					1. Ciclista A (Clock Alto, Baixo IPC): Pedala muito rápido (pernas girando freneticamente), mas usa uma marcha muito leve. Ele faz muito esforço para avançar pouco a cada pedalada.<br>
+					2. Ciclista B (Clock Baixo, Alto IPC): Pedala de forma mais lenta e constante, mas usa uma marcha pesada. A cada pedalada, ele avança uma distância muito maior.<br>
+					Mesmo que o Ciclista B mova as pernas menos vezes por minuto (menos GHz), ele pode chegar primeiro porque sua eficiência por pedalada (IPC) é maior.<br>
+					Por que o IPC varia entre os processadores?<br>
+					O IPC depende da microarquitetura do chip. Engenheiros melhoram a performance por clock através de técnicas como:<br>
+					<li><strong>Pipelining</strong>: Dividir uma instrução em etapas menores para que várias instruções possam ser processadas simultaneamente (como uma linha de montagem).</li>
+					<li><strong>Previsão de Desvio (Branch Prediction)</strong>: O processador tenta "adivinhar" qual será o próximo passo do software para já deixar o caminho pronto.</li>
+					<li><strong>Execução Fora de Ordem</strong>: O processador reorganiza as tarefas para não ficar parado esperando um dado lento, adiantando o que já pode ser feito.</li><br>
+					<font color="red">Obs: Comparar processadores apenas pelos "GHz" é como comparar carros apenas pelas "RPM" (rotações do motor) sem olhar para a potência ou a marcha engatada</font>.<br>
+					Cálculo de Desempenho Bruto:<br>
+					1. Calcule o total de instruções que cada processador consegue executar em 1 segundo.<br>
+					(Dica: Multiplique o Clock pelo IPC).<br>
+					<li>Turbo-X: 4.0 x 2 = 8.0 bilhões de instruções/seg.</li>
+					<li>Eficiente-Z: 3.0 x 3 = 9.0 bilhões de instruções/seg.</li><br>
+					2. Análise de Eficiência:<br>
+					Qual processador termina uma tarefa de 9000 milhões de instruções primeiro? Quanto tempo cada um leva?<br>
+					<li>O Eficiente-Z termina primeiro.</li>
+					<li>Eficiente-Z: Leva exatamente 1 segundo 9 / 9.</li>
+					<li>Turbo-X: Leva 1.125 segundos 9 / 8.</li><br>
+					3. Conclusão Crítica:<br>
+					Se um vendedor tentasse te convencer a comprar o Turbo-X apenas porque ele tem "4.0 GHz", ele estaria dizendo toda a verdade sobre a performance? Justifique.<br>
+					Não, ele estaria omitindo a eficiência da arquitetura (IPC). O exercício prova que um processador com clock menor (3.0 GHz) pode superar um de clock maior (4.0 GHz) se sua arquitetura interna for capaz de processar mais instruções simultaneamente.
+                </p>
+                <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">REVOLUÇÃO: PERFORMANCE</span>
+            </section>
+
+            <!-- Core i Series (i3/i5/i7) -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-blue-600 p-3 rounded-lg text-white">
+                        <i class="fas fa-layer-group text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Era Core i (2008+)</h2>
+                </div>
+                <ul class="text-slate-600 space-y-2 text-sm">
+                    <li><strong>i3:</strong> Entrada, 1080p e produtividade básica.</li>
+                    <li><strong>i5:</strong> O "Sweet Spot" para gamers e editores.</li>
+                    <li><strong>i7:</strong> Alta performance com Hyper-threading.</li>
+                </ul>
+                <div class="mt-4">
+                    <span class="bg-slate-100 text-slate-500 text-xs font-bold px-3 py-1 rounded-full">PADRÃO: MAINSTREAM</span>
+                </div>
+            </section>
+
+            <!-- Core Ultra -->
+            <section class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500 hover:shadow-md transition-shadow">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-3 rounded-lg text-white">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Core Ultra (2023)</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Arquitetura Meteor Lake com design de chiplets e NPU integrada para tarefas de Inteligência Artificial, priorizando eficiência e processamento neural.
+                </p>
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">FUTURO: IA INTEGRADA</span>
+            </section>
+
+        </div>
+
+        <hr class="my-16 border-slate-200">
+
+        <!-- Quiz Section -->
+        <section id="quiz-container" class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-2">Teste seus Conhecimentos</h2>
+                <p class="text-slate-500">Responda ao desafio técnico de 10 perguntas baseado na evolução Intel.</p>
+            </div>
+
+            <div id="quiz-content" class="space-y-8">
+                <!-- Perguntas serão injetadas aqui via JS -->
+            </div>
+
+            <div class="mt-12 text-center p-8 bg-white rounded-2xl shadow-sm border border-slate-100">
+                <div id="result-display" class="hidden mb-6">
+                    <p class="text-lg font-semibold">Sua nota: <span id="score-value" class="text-3xl text-blue-600 font-bold">0</span>/10</p>
+                    <p id="feedback-text" class="text-slate-600 mt-2"></p>
+                </div>
+                <button id="btn-calculate" onclick="calculateResult()" class="intel-gradient text-white px-10 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg">
+                    Calcular Minha Nota
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 px-4 mt-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-4">&copy <span class="text-white font-bold">Halex System&reg</span></p>
+            <!--<div class="text-xs uppercase tracking-widest flex justify-center gap-8">
+                <span>Frontend: HTML5/Tailwind</span>
+                <span>Backend: JS Engine (Simulated PHP)</span>
+                <span>Security: XSS/SQL Injection Proof Logic</span>
+            </div>-->
+        </div>
+    </footer>
+
+    <!-- LOGICA DE BANCO DE DATOS (DOCUMENTAÇÃO SQL)
+    /* CREATE TABLE questions (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        question TEXT NOT NULL,
+        option_a VARCHAR(255) NOT NULL,
+        option_b VARCHAR(255) NOT NULL,
+        option_c VARCHAR(255) NOT NULL,
+        option_d VARCHAR(255) NOT NULL,
+        correct_option CHAR(1) NOT NULL,
+        category VARCHAR(50)
+    );
+
+    CREATE TABLE results (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        user_id VARCHAR(100),
+        score INT,
+        date_taken TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    */
+    -->
+
+    <script>
+        // Banco de Dados de Questões (Pool de 20 para garantir 40% de rotação em cada refresh)
+        const allQuestions = [
+            { q: "Qual foi o ano de lançamento do Intel Pentium original?", a: "1991", b: "1993", c: "1995", d: "1998", correct: "b" },
+            { q: "O processador Celeron de 1998 era baseado em qual arquitetura?", a: "Pentium Pro", b: "Pentium III", c: "Pentium II", d: "486", correct: "c" },
+            { q: "Qual a principal característica do Xeon voltada para servidores?", a: "Baixo custo", b: "Memória ECC", c: "Sem ventoinha", d: "Design de Chiplets", correct: "b" },
+            { q: "Em 2006, o Core 2 Duo substituiu qual arquitetura problemática?", a: "Netburst", b: "Nehalem", c: "Meteor Lake", d: "Broadwell", correct: "a" },
+            { q: "O que o Core 2 Quad fez para ter quatro núcleos?", a: "Novo chip único", b: "Combinou dois dies de Duo", c: "Software de emulação", d: "Hyper-threading", correct: "b" },
+            { q: "Qual o objetivo da linha Core i3 lançada em 2010?", a: "Servidores massivos", b: "Uso doméstico e básico", c: "Mineração de cripto", d: "Apenas notebooks", correct: "b" },
+            { q: "A linha Core i5 é considerada o 'Sweet Spot' por que?", a: "É o mais caro", b: "Equilíbrio entre preço e performance", c: "Tem menos núcleos", d: "Não usa ventoinha", correct: "b" },
+            { q: "Qual tecnologia o Core i7 usa para dobrar as threads virtuais?", a: "Turbo Boost", b: "Hyper-threading", c: "Overclock", d: "Chipset Pro", correct: "b" },
+            { q: "O Core i9 foi lançado em 2017 para competir com qual rival?", a: "Apple M1", b: "AMD Ryzen Threadripper", c: "Snapdragon X", d: "IBM Power", correct: "b" },
+            { q: "A nova NPU no Core Ultra serve especificamente para quê?", a: "Gráficos de jogo", b: "Tarefas de Inteligência Artificial", c: "Gerenciamento de energia", d: "Conexão Wi-Fi", correct: "b" },
+            { q: "Qual jogo clássico foi usado como exemplo de performance no Pentium?", a: "Doom", b: "Crysis", c: "Minecraft", d: "Half-Life", correct: "a" },
+            { q: "Qual era o bug famoso do processador Pentium?", a: "Bug de Vídeo", b: "FDIV Bug (Matemático)", c: "Bug de Áudio", d: "Superaquecimento", correct: "b" },
+            { q: "O processador Celeron era famoso por ser encontrado em:", a: "Supercomputadores", b: "Laboratórios escolares e PCs família", c: "NASA", d: "Consoles de Vídeo Game", correct: "b" },
+            { q: "O Core 2 Duo era conhecido por ser:", a: "Quente e Barulhento", b: "Frio e Eficiente", c: "Lento e Barato", d: "Apenas para Servidores", correct: "b" },
+            { q: "Qual a base de clock do Core 2 Quad Q6600?", a: "1.0 GHz", b: "2.4 GHz", c: "3.5 GHz", d: "5.0 GHz", correct: "b" },
+            { q: "Hoje, um processador Core i3 moderno possui de quantos núcleos?", a: "1 a 2", b: "4 a 8", c: "12 a 16", d: "24", correct: "b" },
+            { q: "O Core i5-750 de 2009 iniciou a era i5 com quantos núcleos?", a: "2", b: "4", c: "6", d: "8", correct: "b" },
+            { q: "O Core i9 topo de linha atual pode chegar a quantos núcleos?", a: "12", b: "24", c: "32", d: "64", correct: "b" },
+            { q: "A arquitetura do Core Ultra 2023 é conhecida como:", a: "Coffee Lake", b: "Meteor Lake", c: "Ice Lake", d: "Sky Lake", correct: "b" },
+            { q: "Qual dessas linhas NÃO é da Intel?", a: "Xeon", b: "Threadripper", c: "Pentium", d: "Celeron", correct: "b" }
+        ];
+
+        // Função para embaralhar Arrays
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Lógica de Seleção: Escolher 10 questões aleatórias (Garante variação superior a 40%)
+        function getQuizSet() {
+            const shuffledPool = shuffle([...allQuestions]);
+            return shuffledPool.slice(0, 10);
+        }
+
+        const currentQuiz = getQuizSet();
+
+        // Renderizar Quiz
+        function initQuiz() {
+            const container = document.getElementById('quiz-content');
+            container.innerHTML = '';
+
+            currentQuiz.forEach((item, index) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = "bg-white p-6 rounded-2xl shadow-sm border border-slate-100";
+                qDiv.innerHTML = `
+                    <p class="font-bold text-lg mb-4 text-slate-700">${index + 1}. ${item.q}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="q-block-${index}">
+                        <label class="quiz-option border-2 border-slate-100 p-4 rounded-xl cursor-pointer transition-all flex items-center gap-3">
+                            <input type="radio" name="q${index}" value="a" class="w-4 h-4 accent-blue-600"> <span>A) ${item.a}</span>
+                        </label>
+                        <label class="quiz-option border-2 border-slate-100 p-4 rounded-xl cursor-pointer transition-all flex items-center gap-3">
+                            <input type="radio" name="q${index}" value="b" class="w-4 h-4 accent-blue-600"> <span>B) ${item.b}</span>
+                        </label>
+                        <label class="quiz-option border-2 border-slate-100 p-4 rounded-xl cursor-pointer transition-all flex items-center gap-3">
+                            <input type="radio" name="q${index}" value="c" class="w-4 h-4 accent-blue-600"> <span>C) ${item.c}</span>
+                        </label>
+                        <label class="quiz-option border-2 border-slate-100 p-4 rounded-xl cursor-pointer transition-all flex items-center gap-3">
+                            <input type="radio" name="q${index}" value="d" class="w-4 h-4 accent-blue-600"> <span>D) ${item.d}</span>
+                        </label>
+                    </div>
+                `;
+                container.appendChild(qDiv);
+            });
+        }
+
+        // Calcular Resultado
+        function calculateResult() {
+            let score = 0;
+            const btn = document.getElementById('btn-calculate');
+            
+            // Regra: Desativar botão após clique
+            btn.disabled = true;
+            btn.innerText = "Resultado Processado";
+
+            currentQuiz.forEach((item, index) => {
+                const selected = document.querySelector(`input[name="q${index}"]:checked`);
+                const options = document.querySelectorAll(`#q-block-${index} label`);
+                
+                // Mostrar Respostas Corretas
+                options.forEach(opt => {
+                    const val = opt.querySelector('input').value;
+                    if(val === item.correct) {
+                        opt.classList.add('correct-answer');
+                    } else if (selected && selected.value === val && val !== item.correct) {
+                        opt.classList.add('wrong-answer');
+                    }
+                });
+
+                if (selected && selected.value === item.correct) {
+                    score++;
+                }
+            });
+
+            // Exibir Nota
+            const display = document.getElementById('result-display');
+            const scoreVal = document.getElementById('score-value');
+            const feedback = document.getElementById('feedback-text');
+
+            display.classList.remove('hidden');
+            scoreVal.innerText = score;
+
+            if(score >= 8) feedback.innerText = "Excelente! Você é um expert em hardware Intel.";
+            else if(score >= 5) feedback.innerText = "Bom trabalho! Você tem uma base sólida sobre processadores.";
+            else feedback.innerText = "Continue estudando. A história da tecnologia é vasta!";
+
+            // Scroll suave para o resultado
+            display.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Inicialização
+        window.onload = initQuiz;
+    </script>
+</body>
+</html>
